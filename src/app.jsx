@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './app.scss';
 
+import Landing from './components/Landing';
+
 const App = () => {
   return (
     <>
-      <p>Begin editing App.js to start developing your App!</p>
+      <Landing />
     </>
   )
 }
