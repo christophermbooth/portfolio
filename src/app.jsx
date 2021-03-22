@@ -10,10 +10,12 @@ import {
 
 import Landing from './components/Landing';
 import About from './components/About';
+import Nav from './components/Nav';
 
 const App = () => {
   return (
     <Router>
+      <Nav />
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route path="/about" component={About} />
