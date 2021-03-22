@@ -9,7 +9,7 @@ const html = path.join(public, "index.html");
 
 app.use(express.static(public));
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(html)
 })
 
