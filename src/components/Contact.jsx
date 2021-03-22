@@ -19,12 +19,20 @@ const Contact = () => {
   //handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Submitted');
-    //AXIOS CALL TO BACKEND EMAIL HANDLER
-    //axios.post('/email/send', {name, email, message})
-      //then if status === success, display success feedback on screen, resetForm()
-      //else display error feedback on screen
-      //catch erorrs, log to console, display error feedback to screen
+    Axios.post('/email/send', {name, email, message})
+      .then( res => {
+        let { status } = res.data;
+        if (status === "success") {
+          resetForm();
+          alert('Message sent');
+        } else if (status === "fail") {
+          alert('Message failed to send. Please try again');
+        }
+      })
+      .catch( err => {
+        console.warn('An error occurred sending the message:\n', err);
+        alert('An error occurred sending the message. Check the console for details');
+      })
   }
   
   return (
