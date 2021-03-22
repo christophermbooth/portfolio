@@ -13,6 +13,7 @@ import About from './components/About';
 import Nav from './components/Nav';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Projects from './components/Projects';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
+        <Route path="/projects" component={Projects} />
       </Switch>
     </Router>
   )
