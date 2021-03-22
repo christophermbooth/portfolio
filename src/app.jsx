@@ -12,6 +12,7 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Nav from './components/Nav';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/" component={Landing} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/resume" component={Resume} />
       </Switch>
     </Router>
   )
