@@ -5,12 +5,30 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  background: #1c1c1c;
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
+  &:hover {
+    color: #60d394;
+  }
+}
+
+.logo {
+  a {
+    padding-left: 20px;
+  }
+
 }
 
 ul {
   list-style: none;
-  padding: 0;
+  padding-right: 20px;
   li {
     padding: 10px
   }
@@ -20,16 +38,4 @@ ul {
   padding: 0, 2em;
   display: flex;
   color: white;
-
-  a {
-    text-decoration: none;
-    color: white;
-    &:visited {
-      text-decoration: none;
-      color: white;
-    }
-    &:hover {
-      color: #60d394;
-    }
-  }
 }
