@@ -36,7 +36,7 @@ const Contact = () => {
   }
   
   return (
-    <div>
+    <div className="content">
       <div id="details">
         <h3>Let's Chat!</h3>
         <p>Phone: (504) 355-6898</p>
