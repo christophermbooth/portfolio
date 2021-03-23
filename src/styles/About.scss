@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.text-group {
+  width: 60%;
+  h2 {
+    text-align: center;
+  }
+}
+.cb-img {
+  width: 40%;
+  margin: auto;
+  img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+  }
+}
+p {
+  padding: 1em;
+}
+
+.skills-group {
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .text-group {
+    order: 1;
+  }
+  .cb-img {
+    order: 0;
+    padding-bottom: 20px;
+  }
+}
