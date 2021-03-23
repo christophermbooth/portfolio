@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about-me">
+    <div className="content">
       <div>
         <h2>About me</h2>
         <img src="" alt="chris-booth-photo" />
@@ -26,7 +26,7 @@ const About = () => {
           reading up on a new boardgame, or catching up with friends and family.
         </p>
       </div>
-    </section>
+    </div>
   )
 }
 

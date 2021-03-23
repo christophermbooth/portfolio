@@ -4,7 +4,7 @@ import {projectsData} from '../data/projects.js';
 
 const Projects = () => {
   return (
-    <div>
+    <div className="content">
       {projectsData.map(({ Name, Image, GitHub, Description }) => {
         return <ProjectCard
           key={Name}
