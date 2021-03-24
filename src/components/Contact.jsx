@@ -53,10 +53,9 @@ const Contact = () => {
           <p><Location className="svg" />New Orleans, La</p>
           <div id="online-presence">
             <h3>Find Me Online</h3>
-            <a href="https://twitter.com/fairchildbooth" alt="Chris's Twitter"><GitHub className="svg-logo" /></a>
-            <a href="https://twitter.com/fairchildbooth" alt="Chris's Twitter"><Linkedin className="svg-logo" /></a>
+            <a href="https://github.com/christophermbooth" alt="Chris's GitHub"><GitHub className="svg-logo" /></a>
+            <a href="https://www.linkedin.com/in/christopherm-booth/" alt="Chris's LinkedIn"><Linkedin className="svg-logo" /></a>
             <a href="https://twitter.com/fairchildbooth" alt="Chris's Twitter"><Twitter className="svg-logo" /></a>
-            <a href="https://twitter.com/fairchildbooth" alt="Chris's Twitter"><Instagram className="svg-logo" /></a>
           </div>
         </div>
         <div className="form-container">
