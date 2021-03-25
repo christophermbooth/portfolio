@@ -39,3 +39,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .text-column {
+    width: 100%;
+  }
+ .image-column {
+   display: none;
+ }
+}
