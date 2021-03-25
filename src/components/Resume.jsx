@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Resume.scss';
 
 const Resume = () => {
+
+  useEffect(() => {
+    document.title = "Resume || Christopher Booth"
+    return () => {
+      document.title = "Christopher Booth"
+    }
+  }, [])
+
   const resumeLink = "https://drive.google.com/file/d/1_9eRw68ve9jbRtBKm_LvQLkONEBqkIKa/preview"
   return (
     <div className="content">
