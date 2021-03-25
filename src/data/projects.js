@@ -1,5 +1,5 @@
 import Prost from "../images/Projects/Prost.png";
-import Radma from '../images/Projects/Radma.png';
+import Radma from '../images/Projects/radma.png';
 import ProgrammingBooth from '../images/Projects/ProgrammingBooth.png';
 
 export const projectsData = [
