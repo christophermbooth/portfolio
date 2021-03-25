@@ -3,7 +3,6 @@ import '../styles/Contact.scss';
 import Axios from 'axios';
 import Email from '../images/email.svg';
 import GitHub from '../images/GitHub.svg';
-import Instagram from '../images/Instagram.svg';
 import Linkedin from '../images/linkedin.svg';
 import Location from '../images/location.svg';
 import Phone from '../images/phone.svg';
@@ -11,6 +10,13 @@ import Twitter from '../images/twitter.svg';
 
 
 const Contact = () => {
+
+  useEffect(() => {
+    document.title = "Contact || Christopher Booth"
+    return () => {
+      document.title = "Christopher Booth"
+    }
+  }, [])
 
   //states for form
   const [name, setName] = useState('');

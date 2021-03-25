@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/About.scss';
 import Chris from '../images/Chris.jpeg'
 
 const About = () => {
+
+  useEffect(() => {
+    document.title = "About || Christopher Booth"
+    return () => {
+      document.title = "Christopher Booth"
+    }
+  }, [])
+
   return (
     <div className="content">
       <div className="container">
